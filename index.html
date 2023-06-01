@@ -6,22 +6,24 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Namaste React</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link href='./index.css' rel="stylesheet"/>
+    <link href='./index.css' rel="stylesheet" />
 </head>
 
 <body>
     <div id="root"></div>
-    <!-- <h1>Hello World! using HTML</h1> -->
-    <!-- <script>
-            const heading = document.createElement("h1");
-            heading.innerHTML = "Hello World from Javascript!"
-            const root = document.getElementById("root");
-            root.appendChild(heading)
-        </script> -->
+    <!-- Using HTML -->
+    <h1>Hello World! using HTML</h1>
+    <!-- Using Javascript -->
+    <script>
+        const heading = document.createElement("h1");
+        heading.innerHTML = "Hello World from Javascript!"
+        const parent = document.getElementById("root");
+        parent.appendChild(heading)
+    </script>
+    <!-- Using React -->
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script src="./App.js"></script>
-
 </body>
 
 </html>
