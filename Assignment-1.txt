@@ -1,0 +1,28 @@
+1. What is Emmet?
+Ans- It is a feature in VS-Code designed to speedup process of coding by providing shortcuts which can expand to complete piece of code.
+
+2. Difference between a library and framework?
+Ans- A framework defines how a user/dev should design an application, whereas library consists of certain functions which the developer 
+     can use whenever required.
+     Library can be integrated into a project easily unlike framework which requires new project to be created.
+
+3. What is CDN and Why we use it?
+Ans- Content Delivery Network is a network of services that delivers content to users which helps in reduction of loading/rendering time of web applications.
+
+4. Why React is known as React?
+Ans- As it was designed to help developer react to changes in the state of application by rendering and updating web pages with respect to changes
+
+5. What is crossorigin in script tag?
+Ans- Cross Origin in script tag provides support for CORS. CORS is a header based mechanism that allows server to indicate to indicate any cross origins
+     i.e other than it's own domain from which browser should permit loading the resources.
+
+6. What is difference between react and reactdom? 
+Ans- React has features of React library, whereas reactDOM is used for DOM manipulations.
+
+7. What is difference between react.development.js and react.production.js files via cdn?
+Ans- React devlopment is used for only development purposes, unlike production which consists of optimized and readied code.
+
+8. What are async and defer?
+Ans- async allows script to run as soon as it is loaded, without blocking other elements on the page. 
+     In defer script will only execute after the page has finished loading.
+
