@@ -1,0 +1,20 @@
+Notes - Igniting our App
+1. git - manage versions of source code installed locally, editing repostory
+   github - hosts git repository
+2. npm - Anything but not "node package manager"!!!.
+3. package - configuration of the project
+4. bundler - bundles/packages the app (webpack, parcel)
+   create-react-app - uses bundler(webpack)
+5. -D - devDependencies
+6. node_modules - Fetches all code of devDependencies
+7. transitive dependencies - 1 dependency depends on other and so on....
+8. integrety (in package.json) - makes sure same package version are present in prod and local
+9. With package.json and package-lock.json node_modules can be created
+10. npx - install and execute; npm - install
+11. browserslist - all types of browsers to be supported, locations etc.
+12. main (in package.json) is removed for prod build
+
+Commands
+1. npx parcel build index.html - Prod build
+2. npm package index.html - dev build
+3. npm install (package_name) - Install package (install can be replaced with only "i")

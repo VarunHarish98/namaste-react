@@ -1,0 +1,65 @@
+1. What is NPM?
+Ans. - npm is anything except node package manager.
+     - It is a registery which contains all the various packages of Javascript
+
+2. What is Parcel/Webpack? Why do we need it?
+Ans. - Parcel/Webpack are bundlers which packages code into single file.
+     - They combine various files like .js, .html, .css files into a single entity and can be used to 
+       run in browsers
+
+3. What is '.parcel-cache'?
+Ans. - Whenever a build is performed the files are cached into a folder under `.parcel-cache`.
+     - It helps the parcel to load the content faster
+
+4. What is  `npx`?
+Ans. - It is a command which is used to install and execute a package.
+
+5. What is difference between dependencies and devDependencies?
+Ans. - dependencies contains packages which are production ready and are stable whereas devDependencies
+       contains packages which are unstable and for developers usages
+
+6. What is tree shaking?
+Ans. - It is a special feature in parcel which removes the unused code whcile making it production ready.
+
+7. What is Hot Module Replcaement?
+Ans. - It is also a feature of parcel in which As and when file is changed/updated it is automatically refreshed!.
+
+8. List down your favorite 5 superpowers of parcel and describe any 3 of them in your own words.
+Ans. - HMR(Hot Module Replacement)
+     - Tree Shaking
+     - Diagnostics
+     - Support for HTTP/S flag
+     - Caching
+
+    - Support for HTTP/S flag 
+        * Ability of parcel to provide a dev server with a https with only one flag
+        * --https flag need to be added
+
+    - Diagnostics
+        * Support for displaying the truely colorfull and neat error handling 
+        * Exact place of error is pointed out with various colors, easy to debug!!!.
+
+    - Tree Shaking
+        * Removes the unwanted code or the codes which are not in use
+        * Mainly helps in faster rendering of the web applications as the time decreases.
+
+9. What is `.gitignore`? What should we add and not add into it?
+Ans. - A file in which certain files/folders which need not to be pushed into git repository are added  
+     - Files which can be generated again should be added into it. 
+
+10. What is the difference between package.json and package-lock.json?
+Ans. - package.json contains packages of various configurations of the packages required to run the application
+     - package-lock.json contains detailed information and versions of all the packages present in package.json
+
+11. Why should I not modify package-lock.json?
+Ans. - AS it contains exact versions of the packages and has information of the other dependencies.
+
+12. What is node_modules? Is it good idea to push that on git?
+Ans. - It contains code of all dependecies used in the project.
+     - Not a good idea to push it to git, as package and package-lock.json can generate it and it can be regenerated 
+
+13. What is dist folder?
+Ans. - Once parcel build is executed, dist folder contains dynamically generated files created by parcel.
+
+14. What is browserslists?
+Ans. - It is npm package which can limit the functionioning of applications to certain browsers, browser versions, locations etc.
