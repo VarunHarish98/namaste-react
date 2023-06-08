@@ -1,0 +1,18 @@
+1. What is JSX
+Ans. - It can be considered as addition to Javascript having HTML like syntax
+     - JSX elements are first converted into React elements and then further to HTML elements through transpiler.
+
+2. Superpowers of JSX?
+Ans. - Writing React code is easier and hassle free when compared to writing it through React.createElement
+     - It do not allow any bad API response thereby preventing cross site scripting
+     - Using JSX it is easy to handle JS and HTML code.
+
+3. Role of type attribute in script tag? What options can I use there?
+Ans. - Browser needs to understand the language of script or type of file in order to render it 
+     - It is done thorugh a transpiler
+
+4. {TitleComponent} vs {<TitleComponent/>} vs {<TitleComponent><TitleComponent/>}
+Ans. - {TitleComponent} - It is attribute, variables are passed into JSX in this format
+     - {<TitleComponent/>} - A Functional Component is passed like this.
+     - {<TitleComponent><TitleComponent/>} - It is as same as passing a functional component. 
+        Used when a further child is passed under it.

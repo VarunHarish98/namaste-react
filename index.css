@@ -1,3 +1,30 @@
-#heading {
-    color: green;
+.title {
+    background-color: white;
+}
+
+#search {
+    position:absolute;
+    left: 5%;
+    height: 51px;
+    top: 8px;;
+    width:90%;
+    background-color:white;
+    display: flex;
+    border: 0.5px solid #00B4CC;
+    border-radius: 5px 0 0 5px;
+    font-size: 15px;
+    outline: hidden;
+}
+
+#logo {
+    width: 50px;
+    text-align: justify;
+    background-color:#5B5EA6;
+}
+
+#icon {
+    width: 52px;
+    background-color: white;
+    float: right;
+    height: 55px;
 }

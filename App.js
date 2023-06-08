@@ -1,7 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import logo from './images/logo.png';
+import icon from './images/icon_user.png';
 
 //Assignment-1
+
 // const headings = React.createElement(
 //   "div",
 //   {
@@ -35,35 +38,48 @@ import ReactDOM from "react-dom/client";
 // const root = ReactDOM.createRoot(document.getElementById("root")); //Create root
 // root.render(headings);
 
+//----------------------------------------------------------
 //Assignment - 2; Using JSX
 
-const HeaderComponent1 = () => <h1>This is h1 header from Functional Component</h1>
-const HeaderComponent2 = () => <h2>This is h2 header from Functional Component</h2>
-const HeaderComponent3 = () => <h3>This is h3 header from Functional Component</h3>
+// const HeaderComponent1 = () => <h1>This is h1 header from Functional Component</h1>
+// const HeaderComponent2 = () => <h2>This is h2 header from Functional Component</h2>
+// const HeaderComponent3 = () => <h3>This is h3 header from Functional Component</h3>
 
-const attributes = function(a, b) {
-  return a + b
-}
+// const attributes = function(a, b) {
+//   return a + b
+// }
 
-const HeaderComponentComp = () => (
-  <HeaderComponent3 />
-)
+// const HeaderComponentComp = () => (
+//   <HeaderComponent3 />
+// )
 
-const attStr = "This is passed from from a variable"
+// const attStr = "This is passed from from a variable"
 
-const HeadingComponent = () => (
+// const HeadingComponent = () => (
+//   <div className="title">
+//     <h1>This is h1 header from JSX</h1>
+//     <h2>This is h2 header from JSX</h2>
+//     <h3>This is h3 header from JSX</h3>
+//     <HeaderComponent1 />
+//     <HeaderComponent2 />
+//     <HeaderComponent3 />
+//     {attributes(10, 20)} <br/>
+//     {attStr}
+//     <HeaderComponentComp />
+//   </div>  
+// )
+
+const LogoComponent = () => <img src={logo} id="logo"/>
+const SearchComponent = () => <input type="text" id="search" placeholder="What are you looking for...?"/>
+const IconComponent = () => <img src={icon} id="icon"/>
+
+const HeaderComponent = () => (
   <div className="title">
-    <h1>This is h1 header from JSX</h1>
-    <h2>This is h2 header from JSX</h2>
-    <h3>This is h3 header from JSX</h3>
-    <HeaderComponent1 />
-    <HeaderComponent2 />
-    <HeaderComponent3 />
-    {attributes(10, 20)} <br/>
-    {attStr}
-    <HeaderComponentComp />
-  </div>  
-)
+    <LogoComponent />
+    <SearchComponent />
+    <IconComponent />
+  </div>
+);
 
 const rootObject = ReactDOM.createRoot(document.getElementById("root")); //Create root
-rootObject.render(<HeadingComponent />);
+rootObject.render(<HeaderComponent />);
