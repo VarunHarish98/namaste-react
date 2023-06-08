@@ -1,0 +1,20 @@
+Notes
+1. HTML like syntax and JS -> JSX
+2. parcel is converting/transpiling JSX into browser understandable code!!! 
+3. parcel is dependent on transpiler i.e babel
+4. React.createElement -> returns Object -> rendered as HTML element
+   When used as JSX => JSX -> transpiler -> React.createElement -> returns Object -> rendered as HTML element
+5. Attributes in JSX is in camelCase
+6. Values of attribues/variables/any JS code are specified using {} in JSX
+7. Multiple line JSX needs to wrapped inside () if single line not required.
+8. Everything in React is a Component!!!
+9. Components
+   a. Class Based Components - Old way of writing code (Obsolete) - Uses JS classes
+   b. Functional Components - New way of writing code - Uses JS functions and returns React Element/JSX code
+10. Components are rendered in-between <..../>
+   Ex. - root.render(< HeadingComponent />)
+11. Component Composition - Component inside Component
+12. JSX takes care of Injection attacks prevents Cross site scripting 
+13. JSX must have only 1 parent element (1 div and multiple inside it)
+14. Solution for Multiple Parent element is "REACT FRAGMENTS", rendering possbile due to React Fragments with empty tag
+    a. Code is ugly, instead of React.Fragment empty tages can be used <> and </>
