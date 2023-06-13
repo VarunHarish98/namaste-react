@@ -6,6 +6,25 @@ const BodyComponent = () => {
   const [listOfRestuarants, setListOfRestuarants] = useState(resList);
   return (
     <div className="body">
+      <div className="search">
+        <input
+          type="search"
+          id="mySearch"
+          placeholder="Search Restruants"
+          onChange={() => {
+            let searchRestuarants = resList.filter((res) => {
+              if (
+                res?.data?.name?.toLowerCase()
+                  .includes(
+                    document.getElementById("mySearch").value?.toLowerCase()
+                  )
+              )
+                return res;
+            });
+            setListOfRestuarants(searchRestuarants);
+          }}
+        ></input>
+      </div>
       <div className="filter">
         <button
           className="filter-btn"
